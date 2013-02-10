@@ -4,8 +4,8 @@ module ApiTaster
 
     def index
       @routes = Route.grouped_routes
-      @has_missing_definitions  = Route.missing_definitions.present?
-      @has_obsolete_definitions = Route.obsolete_definitions.present?
+      @has_missing_definitions  = false
+      @has_obsolete_definitions = false
     end
 
     def show
